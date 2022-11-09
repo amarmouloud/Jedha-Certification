@@ -1,0 +1,8 @@
+pandas
+requests
+numpy
+boto3
+Scrapy
+jupyterlab
+psycopg2-binary
+sqlalchemy
