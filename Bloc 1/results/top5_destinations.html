@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_36f925340d337975b3825849f72f018b {
+                    position: relative;
+                    width: 500.0px;
+                    height: 500.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+             <h3 align="left" style="font-size:15px"><b>Top 5 destinations for the next 7 days</b></h3>
+             
+    
+            <div class="folium-map" id="map_36f925340d337975b3825849f72f018b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_36f925340d337975b3825849f72f018b = L.map(
+                "map_36f925340d337975b3825849f72f018b",
+                {
+                    center: [43.155627679999995, 4.357864080000001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d20a07add45109e6802e4b1b3d2fd3a4 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_36f925340d337975b3825849f72f018b);
+        
+    
+            var marker_cdcf41c6828968b27a425f044225a378 = L.marker(
+                [43.2140359, 5.5396318],
+                {}
+            ).addTo(map_36f925340d337975b3825849f72f018b);
+        
+    
+            var beautify_icon_cb4920a3d0e68093f01dc7ba322fc5f3 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFC300", "borderColor": "#FFC300", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "#000"}
+            )
+            marker_cdcf41c6828968b27a425f044225a378.setIcon(beautify_icon_cb4920a3d0e68093f01dc7ba322fc5f3);
+        
+    
+        var popup_cab6b334da3afe67eec8cfc3e3c9af41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e003594bad773f2312acfc325508051 = $(`<div id="html_7e003594bad773f2312acfc325508051" style="width: 100.0%; height: 100.0%;">Cassis</div>`)[0];
+                popup_cab6b334da3afe67eec8cfc3e3c9af41.setContent(html_7e003594bad773f2312acfc325508051);
+            
+        
+
+        marker_cdcf41c6828968b27a425f044225a378.bindPopup(popup_cab6b334da3afe67eec8cfc3e3c9af41)
+        ;
+
+        
+    
+    
+            var marker_c3fe015f177bb6d2359062351e0a4048 = L.marker(
+                [42.52505, 3.0831554],
+                {}
+            ).addTo(map_36f925340d337975b3825849f72f018b);
+        
+    
+            var beautify_icon_caea82e0c4c0bf352e43038c15c17b13 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFC300", "borderColor": "#FFC300", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "#000"}
+            )
+            marker_c3fe015f177bb6d2359062351e0a4048.setIcon(beautify_icon_caea82e0c4c0bf352e43038c15c17b13);
+        
+    
+        var popup_3e738fe454c78a1c896f29448dd76c61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_985bbf2d0d498255a159a7d35bff4542 = $(`<div id="html_985bbf2d0d498255a159a7d35bff4542" style="width: 100.0%; height: 100.0%;">Collioure</div>`)[0];
+                popup_3e738fe454c78a1c896f29448dd76c61.setContent(html_985bbf2d0d498255a159a7d35bff4542);
+            
+        
+
+        marker_c3fe015f177bb6d2359062351e0a4048.bindPopup(popup_3e738fe454c78a1c896f29448dd76c61)
+        ;
+
+        
+    
+    
+            var marker_91a8354ea80b935c8527bc69d042dc75 = L.marker(
+                [43.2130358, 2.3491069],
+                {}
+            ).addTo(map_36f925340d337975b3825849f72f018b);
+        
+    
+            var beautify_icon_548316de828c4ecd282c58c84d8eed35 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFC300", "borderColor": "#FFC300", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "#000"}
+            )
+            marker_91a8354ea80b935c8527bc69d042dc75.setIcon(beautify_icon_548316de828c4ecd282c58c84d8eed35);
+        
+    
+        var popup_49c6f5863e32376862b625dc9b07216d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6807d49ca434e289872370430fdf5e0b = $(`<div id="html_6807d49ca434e289872370430fdf5e0b" style="width: 100.0%; height: 100.0%;">Carcassonne</div>`)[0];
+                popup_49c6f5863e32376862b625dc9b07216d.setContent(html_6807d49ca434e289872370430fdf5e0b);
+            
+        
+
+        marker_91a8354ea80b935c8527bc69d042dc75.bindPopup(popup_49c6f5863e32376862b625dc9b07216d)
+        ;
+
+        
+    
+    
+            var marker_ed7058afb8698545068ee67d992314bf = L.marker(
+                [43.2961743, 5.3699525],
+                {}
+            ).addTo(map_36f925340d337975b3825849f72f018b);
+        
+    
+            var beautify_icon_3ac8e69c48564d00b215fcac995c2354 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFC300", "borderColor": "#FFC300", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "#000"}
+            )
+            marker_ed7058afb8698545068ee67d992314bf.setIcon(beautify_icon_3ac8e69c48564d00b215fcac995c2354);
+        
+    
+        var popup_1533c242bc6ab80c3b4c8ad0d857dfbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_292bc106b9cacb46f2101e40bc6ce96e = $(`<div id="html_292bc106b9cacb46f2101e40bc6ce96e" style="width: 100.0%; height: 100.0%;">Marseille</div>`)[0];
+                popup_1533c242bc6ab80c3b4c8ad0d857dfbc.setContent(html_292bc106b9cacb46f2101e40bc6ce96e);
+            
+        
+
+        marker_ed7058afb8698545068ee67d992314bf.bindPopup(popup_1533c242bc6ab80c3b4c8ad0d857dfbc)
+        ;
+
+        
+    
+    
+            var marker_0add63ac61aa62380417ba07250cc256 = L.marker(
+                [43.5298424, 5.4474738],
+                {}
+            ).addTo(map_36f925340d337975b3825849f72f018b);
+        
+    
+            var beautify_icon_3bb5184a06d80d45e55863e697c04f4a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFC300", "borderColor": "#FFC300", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "#000"}
+            )
+            marker_0add63ac61aa62380417ba07250cc256.setIcon(beautify_icon_3bb5184a06d80d45e55863e697c04f4a);
+        
+    
+        var popup_fea7d6c823449fbb8df514c72b281b48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3abfa4fb9633fe926bfe0c08513f0e9 = $(`<div id="html_c3abfa4fb9633fe926bfe0c08513f0e9" style="width: 100.0%; height: 100.0%;">Aix en Provence</div>`)[0];
+                popup_fea7d6c823449fbb8df514c72b281b48.setContent(html_c3abfa4fb9633fe926bfe0c08513f0e9);
+            
+        
+
+        marker_0add63ac61aa62380417ba07250cc256.bindPopup(popup_fea7d6c823449fbb8df514c72b281b48)
+        ;
+
+        
+    
+</script>
+</html>
