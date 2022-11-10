@@ -6,3 +6,8 @@ Scrapy
 jupyterlab
 psycopg2-binary
 sqlalchemy
+geopandas
+folium 
+matplotlib 
+mapclassify
+ipywidgets
