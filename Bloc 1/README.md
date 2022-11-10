@@ -2,7 +2,7 @@
 
 Goal 🎯 : Scrap weather and hotels data for the top-35 cities to visit in France
 
-Recording 🎥: 
+Recording 🎥: https://share.vidyard.com/watch/U29qSk6L9wfxNBbqJd3FBM?
 
 Keywords :key::
 - Webscrapping
