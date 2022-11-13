@@ -2,7 +2,7 @@
 
 Goal 🎯 : What will influence the obtention of a second date?
 
-Recording 🎥: https://share.vidyard.com/watch/mRGqCQEJQuzdWDx4Cx1YRo?
+Recording 🎥: https://share.vidyard.com/watch/cKDyAmtiJM3degn8aD1tKv?
 
 Keywords :key::
 - Exploratory Data Analysis
