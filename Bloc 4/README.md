@@ -5,13 +5,13 @@ Goal 🎯 : TPredict whether a tweet is announcing a disaster using NLP and Deep
 Recording 🎥: https://share.vidyard.com/watch/A8QMnJ4MacJDRtq1EVWSdR?
 
 Keywords 🔑:
-Deep Learning
-NLP
-RNN
+- Deep Learning
+- NLP
+- RNN
 
 Libraries 📚:
-Pandas
-Numpy
-Tensorflow
-NLTK
-Spacy
+- Pandas
+- Numpy
+- Tensorflow
+- NLTK
+- Spacy
