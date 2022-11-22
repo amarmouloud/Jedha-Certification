@@ -1,0 +1,7 @@
+geopandas
+leafmap
+streamlit
+streamlit-folium
+osmnx
+joblib
+sklearn
