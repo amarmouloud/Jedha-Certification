@@ -4,4 +4,4 @@ streamlit
 streamlit-folium
 osmnx
 joblib
-sklearn
+scikit-learn==1.1.2
