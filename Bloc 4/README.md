@@ -1,6 +1,6 @@
 # NLP-with-disaster-tweets
 
-Goal 🎯 : TPredict whether a tweet is announcing a disaster using NLP and Deep Learning. The dataset comes from this [Kaggle competition](https://www.kaggle.com/c/nlp-getting-started).
+Goal 🎯 : Predict whether a tweet is announcing a disaster using NLP and Deep Learning. The dataset comes from this [Kaggle competition](https://www.kaggle.com/c/nlp-getting-started).
 
 Recording 🎥: https://share.vidyard.com/watch/A8QMnJ4MacJDRtq1EVWSdR?
 
