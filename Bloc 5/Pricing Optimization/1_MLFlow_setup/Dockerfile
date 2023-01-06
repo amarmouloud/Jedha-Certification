@@ -21,6 +21,11 @@ COPY requirements.txt /dependencies/requirements.txt
 #RUN pip install --upgrade pip setuptools wheel
 RUN pip install -r /dependencies/requirements.txt
 
+ENV AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+ENV AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+ENV BACKEND_STORE_URI=$BACKEND_STORE_URI
+ENV ARTIFACT_STORE_URI=$ARTIFACT_STORE_URI
+
 # run the mlflow server in the container
 CMD mlflow server -p $PORT \
     --host 0.0.0.0 \
