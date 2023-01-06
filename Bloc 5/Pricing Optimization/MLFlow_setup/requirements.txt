@@ -1,6 +1,6 @@
 boto3
-gunicorn 
 sklearn
 mlflow 
 psycopg2-binary
 feature-engine
+gunicorn
