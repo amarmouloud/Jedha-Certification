@@ -8,4 +8,4 @@
     -e BACKEND_STORE_URI=$BACKEND_STORE_URI\
     -e ARTIFACT_ROOT=$ARTIFACT_ROOT\
     --platform linux/amd64\
-    bloc5-pricing-optimization python train.py --alpha=0.1
+    bloc5-pricing-optimization python train.py --min_samples_split=3 --min_samples_leaf=6

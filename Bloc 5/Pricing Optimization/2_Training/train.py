@@ -2,12 +2,12 @@ import argparse
 import pandas as pd
 import time
 import mlflow
-from mlflow.models.signature import infer_signature, ModelSignature
+from mlflow.models.signature import ModelSignature
 from mlflow.types.schema import Schema, ColSpec
-from sklearn.model_selection import train_test_split, GridSearchCV 
+from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import  OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
-from sklearn.linear_model import LinearRegression, Ridge, Lasso
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import r2_score
 from feature_engine.encoding import RareLabelEncoder
@@ -50,7 +50,8 @@ if __name__ == "__main__":
 
     # Parse arguments given in shell script
     parser = argparse.ArgumentParser()
-    parser.add_argument("--alpha")
+    parser.add_argument("--min_samples_split")
+    parser.add_argument("--min_samples_leaf")
     
     args = parser.parse_args()
 
@@ -87,10 +88,11 @@ if __name__ == "__main__":
             ]
         )
 
-    alpha = float(args.alpha)
+    min_samples_split = int(args.min_samples_split)
+    min_samples_leaf = int(args.min_samples_leaf)
     model = Pipeline(steps=[
         ("Preprocessing", featureencoder),
-        ("Regressor",Ridge(alpha))
+        ("Regressor",RandomForestRegressor(min_samples_split=min_samples_split,min_samples_leaf=min_samples_leaf ))
     ])
 
     # Log experiment to MLFlow
@@ -102,13 +104,14 @@ if __name__ == "__main__":
         mlflow.log_metric("R2_train", r2_score(y_train, y_train_pred))
 
         # Log Param
-        mlflow.log_param("Alpha", alpha)
+        mlflow.log_param("min_samples_split", min_samples_split)
+        mlflow.log_param("min_samples_leaf", min_samples_leaf)
 
         # Log model seperately to have more flexibility on setup 
         mlflow.sklearn.log_model(
             sk_model=model,
             artifact_path="pricing-optimization",
-            registered_model_name="pricing-optimization_Ridge",
+            registered_model_name="pricing-optimization_RF",
             signature=signature
         )
         
