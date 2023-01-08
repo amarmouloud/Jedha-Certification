@@ -6,7 +6,7 @@ Goal 🎯 :
 - Sub-project *Delay analysis* : The goal of this analysis is to help the Product Manager to decide how long the minimum delay between rentals should be. 
 - Sub-project *Pricing optimization* : The goal of this project is to predict the daily rental price of a car by creating a model, deploying a MLFlow tracking server and building an API
 
-Recording 🎥: 
+Recording 🎥: https://share.vidyard.com/watch/umUwPi5f97WssCXkBAkQh1?
 
 Keywords 🔑:
 - Dashboard
