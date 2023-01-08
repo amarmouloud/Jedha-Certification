@@ -14,5 +14,5 @@ heroku container:release web -a YOUR_APP_NAME
 ```
 9. Check the result ! `heroku open -a YOUR_APP_NAME`
 
-My Dashboard can be found [here](https://bloc5-pricing-optimization.herokuapp.com/)
+My Dashboard can be found [here](https://bloc5-delay-analysis.herokuapp.com/)
 
