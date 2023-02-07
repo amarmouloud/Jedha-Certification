@@ -1,12 +1,10 @@
 # Get around analysis
 
-Context 🌎: GetAround is the Airbnb for cars. You can rent cars from any person for a few hours to a few days! Founded in 2009, this company has known rapid growth. In 2019, they count over 5 million users and about 20K available cars worldwide.
-
+Context 🌎: andAround est l'Airbnb pour les voitures. Vous pouvez louer des voitures à n'importe qui pour quelques heures à quelques jours ! Fondée en 2009, cette entreprise a connu une croissance rapide. En 2019, ils comptent plus de 5 millions d'utilisateurs et environ 20 000 voitures disponibles dans le monde.
 Goal 🎯 : 
-- Sub-project *Delay analysis* : The goal of this analysis is to help the Product Manager to decide how long the minimum delay between rentals should be. 
-- Sub-project *Pricing optimization* : The goal of this project is to predict the daily rental price of a car by creating a model, deploying a MLFlow tracking server and building an API
-
-Recording 🎥: https://share.vidyard.com/watch/umUwPi5f97WssCXkBAkQh1?
+- Sub-project *analyse des retards* : Le but de cette analyse est d'aider le chef de produit à décider de la durée minimale du délai entre les locations. 
+- Sub-project *Optimisatino des prix* : L'objectif de ce projet est de prédire le prix de location journalier d'une voiture en créant un modèle, en déployant un serveur de suivi MLFlow et en construisant une API
+Vidéo 🎥: https://share.vidyard.com/watch/umUwPi5f97WssCXkBAkQh1?
 
 Keywords 🔑:
 - Dashboard
